@@ -1,0 +1,16 @@
+<div class="header">
+    <p>Daniel</p>
+    <div>
+        <div>
+            <a href="#" (click)="select('aboutMe')">About me</a>
+            <div [class.border-red]="aboutMe"></div>
+        </div>
+        <div>
+            <a href="#" (click)="select('skills')">Skills</a>
+            <div [class.border-red]="skills"></div>
+        </div>        <div>
+            <a href="#" (click)="select('portfolio')">Portfolio</a>
+            <div [class.border-red]="portfolio"></div>
+        </div>
+    </div>
+</div>
