@@ -1,0 +1,62 @@
+.skills {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10%;
+    height: 60vh;
+    width: 80%;
+    padding: 0 10% 0 10%;
+
+    .title {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: min-content;
+        text-align: center;
+
+        div {
+            width: 100%;
+            h1 {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+            }
+
+            button {
+                width: 10rem;
+                height: 4rem;
+                border-radius: 10px;
+                font-size: 1.5rem;
+                background: #FA7902;
+                transition: transform 125ms ease-in-out;
+                margin-top: 10%;
+    
+                &:hover {
+                    background: #FF4747;
+                    transform: scale(1.2) translateY(11.2%) ;
+                }
+            }
+        }
+
+        img {
+            position: absolute;
+            top: 30%;
+            right: -100%;
+            width: 85%;
+            height: 2%;
+            margin: 0;
+        }
+
+    }
+
+    div {
+        width: 55%;
+
+        img {
+            margin: 2.5%;
+        };
+    }
+}

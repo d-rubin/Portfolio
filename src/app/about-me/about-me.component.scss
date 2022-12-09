@@ -1,0 +1,60 @@
+.about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15%;
+    height: 80vh;
+    width: 90%;
+    padding: 0 0 0 10%;
+
+    .about-me-img {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row;
+        width: 50%;
+        padding: 0;
+
+        div {
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            width: 70%;
+
+            img {
+                position: absolute;
+                width: 100%;
+                border-radius: 100%;
+                margin: 0;
+            }
+        }
+
+        .line7 {
+            width: 30%;
+        }
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 40%;
+
+
+        div {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+            margin: 2.5% 0;
+            width: 100%;
+
+            img {
+                width: 50%;
+                margin-right: 5%;
+            }
+        }
+    }
+}
