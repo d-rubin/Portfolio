@@ -5,4 +5,102 @@
     align-items: center;
     width: 80%;
     padding: 0 10%;
+
+    .title {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        pointer-events: none;
+
+        .line-left {
+            position: absolute;
+            top: 35%;
+            left: 0;
+        
+        }
+        
+        .line-right {
+            position: absolute;
+            top: 35%;
+            left: 89%;
+            width: 140%;
+            height: 4px;
+        }
+    }
+
+    .item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 40vh;
+        margin: 5% 0;
+
+        div {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 45%;
+            text-align: end;
+
+            h2 {
+                font-size: 2rem;
+                color: #FF4747;
+                font-weight: 700;
+                margin-top: 0;
+            }
+
+            h3 {
+                font-size: 1rem;
+                color: #FA7902;
+                font-weight: 400;
+                margin: 0;
+            }
+
+            div {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 100%;
+            }
+
+            .live-test {
+                padding: 0;
+                width: 25%;
+                height: 2.5rem;
+                background-color: #FF4747;
+                font-size: 1.1rem;
+                border-radius: 8px;
+                transition: background-color 125ms ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #FA7902;
+                }
+            }
+
+            .github {
+                padding: 0;
+                width: 25%;
+                height: 2.5rem;
+                border-color: #FA7902; 
+                font-size: 1.1rem;
+                cursor: pointer;
+                border-radius: 8px;
+                transition: background-color 125ms ease-in-out;
+
+                &:hover {
+                    background-color: #FA7902;
+                }
+            }
+        }
+
+        img {
+            width: 50%;
+            object-fit: contain;
+        }
+    }
 }
+
