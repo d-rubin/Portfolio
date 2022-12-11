@@ -15,15 +15,15 @@
         .line-left {
             position: absolute;
             top: 35%;
-            left: 0;
+            left: 8%;
         
         }
         
         .line-right {
             position: absolute;
             top: 35%;
-            left: 89%;
-            width: 140%;
+            left: 80%;
+            width: 102%;
             height: 4px;
         }
     }
@@ -66,10 +66,10 @@
 
             .live-test {
                 padding: 0;
-                width: 6rem;
-                height: 2.5rem;
+                width: 7rem;
+                height: 3rem;
                 background-color: #FF4747;
-                font-size: 1.1rem;
+                font-size: 1.5rem;
                 border-radius: 8px;
                 transition: background-color 125ms ease-in-out;
                 cursor: pointer;
@@ -81,10 +81,10 @@
 
             .github {
                 padding: 0;
-                width: 6rem;
-                height: 2.5rem;
+                width: 7rem;
+                height: 3rem;
                 border-color: #FA7902; 
-                font-size: 1.1rem;
+                font-size: 1.5rem;
                 color: white;
                 cursor: pointer;
                 border-radius: 8px;
@@ -141,10 +141,10 @@
 
             .live-test {
                 padding: 0;
-                width: 6rem;
-                height: 2.5rem;
+                width: 7rem;
+                height: 3rem;
                 background-color: #FF4747;
-                font-size: 1.1rem;
+                font-size: 1.5rem;
                 border-radius: 8px;
                 transition: background-color 125ms ease-in-out;
                 cursor: pointer;
@@ -156,10 +156,10 @@
 
             .github {
                 padding: 0;
-                width: 6rem;
-                height: 2.5rem;
+                width: 7rem;
+                height: 3rem;
                 border-color: #FA7902; 
-                font-size: 1.1rem;
+                font-size: 1.5rem;
                 color: white;
                 cursor: pointer;
                 border-radius: 8px;
@@ -184,45 +184,38 @@
             p {
                 text-align: center;
             }
+
+            .line-right {
+                width: 19%;
+            }
         }
 
         .item1, .item2 {
             flex-direction: column-reverse;
             align-items: center;
             height: unset;
-            gap: 10vh;
+            gap: 5vh;
 
             div {
                 align-items: center;
                 width: 100%;
-
-                h2 {
-                    font-size: 4rem;
-                }
-
-                h3 {
-                    font-size: 3rem;
-                }
-
-                p {
-                    font-size: 2rem;
-                }
+                text-align: center;
 
                 div {
                     height: 8rem;
-                    justify-content: space-between;
+                    justify-content: space-evenly;
 
                     button {
-                        height: 6rem;
-                        width: 14rem;
-                        font-size: 2.5rem;
-                        border-radius: 15px;
+                        height: 4rem;
+                        width: 10rem;
+                        font-size: 1.5rem;
+                        border-radius: 10px;
                     }
                 }
             }
 
             img {
-                width: 100%;
+                width: 60%;
             }
         }
 
@@ -230,15 +223,46 @@
     }
 }
 
-@media (max-width: 500px) {
+
+
+@media (max-width: 650px) {
     .portfolio {
-        .item1, .item2 {
-            div {
-                div {
-                    button {
-                        
-                    }
-                }
+        .title {
+            .line-left, .line-right {
+                top: 32%;
+            }
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    .portfolio {
+        .title {
+            .line-left, .line-right {
+                top: 28%;
+            }
+
+            .line-left {
+                left: 0%;
+            }
+
+            .line-right {
+                left: 85%;
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .portfolio {
+        .title {
+
+            .line-left {
+                left: -12%;
+            }
+
+            .line-right {
+                left: 93%;
             }
         }
     }

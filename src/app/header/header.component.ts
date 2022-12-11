@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -9,6 +9,9 @@ export class HeaderComponent implements OnInit {
   aboutMe: boolean = false;
   skills: boolean = false;
   portfolio: boolean = false;
+  menu: boolean = true;
+
+  @Input() icon:string = 'menu';
 
   constructor() { }
 
@@ -34,5 +37,20 @@ export class HeaderComponent implements OnInit {
         this.portfolio = true;
         break;
     }
+  }
+
+  mobileMenu() {
+    if(this.menu) {
+      this.menu = false;
+      this.icon = 'close';
+    }
+    else {
+      this.menu = true;
+      this.icon = 'menu'
+    }
+  }
+
+  closeMenu() {
+    this.menu = true;
   }
 }

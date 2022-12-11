@@ -94,6 +94,7 @@
 
             .mat-icon {
                 position: absolute;
+                color: #141D2F;
                 right: 3%;
                 top: 10%;
                 width: 1.3rem;
@@ -107,7 +108,10 @@
         }
 
         button {
-            width: 50%;
+            width: 14rem;
+            height: 3rem;
+            border-radius: 8px;
+            font-size: 1.5rem;
             background-color: #FA7902;
             transition: background-color 125ms ease-in-out, transform 125ms ease-in-out;
         
@@ -129,7 +133,7 @@
             width: 100%;
 
             img {
-                top: 19%;
+                top: 15%;
                 right: 102%;
             }
         }
@@ -139,26 +143,26 @@
 
             div {
                 input {
-                    height: 4rem;
-                    font-size: 2rem;
+                    height: 3rem;
+                    font-size: 1rem;
                 }
 
                 .mat-icon {
-                    width: 2.3rem;
-                    height: 2.3rem;
-                    font-size: 2.3rem;
+                    width: 1.9rem;
+                    height: 1.9rem;
+                    font-size: 1.9rem;
                 }
 
                 textarea {
                     height: 15rem;
-                    font-size: 2rem;
+                    font-size: 1rem;
                 }
             }
 
             button {
-                height: 5rem;
-                font-size: 2rem;
-                border-radius: 15px;
+                height: 4rem;
+                border-radius: 10px;
+                font-size: 1.5rem;
             }
         }
     }
@@ -169,9 +173,33 @@
     .contact {
         form {
             button {
-                font-size: 1.1rem;
                 height: 3rem;
                 border-radius: 8px;
+            }
+        }
+
+        div {
+            img {
+                top: 13%;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 390px) {
+
+    .contact {
+        form {
+            button {
+                height: 3rem;
+                border-radius: 8px;
+            }
+        }
+
+        div {
+            img {
+                top: 12%;
             }
         }
     }

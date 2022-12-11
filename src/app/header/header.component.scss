@@ -27,6 +27,10 @@
         width: 35%;
         height: 60%;
 
+        .mat-icon {
+            cursor: pointer;
+        }
+
         div {
             position: relative;
             display: flex;
@@ -38,7 +42,7 @@
 
 
             a {
-                font-size: 1.3rem;
+                font-size: 1.5rem;
                 font-weight: 200;
                 color: white;
                 margin-bottom: 5%;
@@ -74,9 +78,69 @@
     font-size: 3rem;
 }
 
+.mobile-menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 10%;
+    right: 0;
+    height: 90vh;
+    background-color: #141D2F;
+    width: 100%;
+    opacity: 0.9;
+    z-index: 5;
+    gap: 10%;
+    overflow: hidden;
+    animation: open-menu 225ms ease-in-out;
+
+    a {
+        height: fit-content;
+        text-decoration: none;
+        font-size: 2rem;
+        color: white;
+        text-align: center;
+        transition: color 125ms ease-in-out;
+
+        &:hover {
+            color: #FA7902;
+        }
+    }
+}
+
+@keyframes open-menu {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes close-menu {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+
+.d-none {
+    display: none;
+}
+
 @media (max-width: 900px) {
     .mat-icon {
         display: unset;
+    }
+
+    .mobile-menu {
+
+        a {
+            text-decoration: none;
+        }
     }
 
     .header {

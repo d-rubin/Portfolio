@@ -6,19 +6,13 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-  // name: string = '';
-  // email: string = '';
-  // message: string = '';
 
-  // @Input() name;
-  // @Input() email;
-  // @Input() message;
+  @Input() name: string = '';
+  @Input() email: string = '';
+  @Input() message: string = '';
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
-  
-
 }

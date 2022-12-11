@@ -19,7 +19,7 @@ footer {
     }
 
     p {
-        font-size: 1.3rem;
+        font-size: 1rem;
         font-weight: 100;
         pointer-events: none;
     }
@@ -55,7 +55,7 @@ footer {
         }
 
         a {
-            font-size: 1.3rem;
+            font-size: 1rem;
             font-weight: 200;
             color: white;
             text-decoration: none;
@@ -88,34 +88,35 @@ footer {
 
 @media (max-width: 900px) {
     footer {
-        height: 50%;
+        height: 26%;
 
         div {
             flex-direction: column;
             gap: 0;
             justify-content: unset;
+            height: 100%;
 
 
             .impressum {
                 flex-direction: column;
                 p {
-                    font-size: 4rem;
+                    font-size: 3rem;
                 }
 
                 div {
                     position: absolute;
-                    top: 230%;
+                    top: 270%;
 
                     div {
                         top: 100%;
-                        left: 25%;
+                        left: 31%;
                     }
                 }
             }
 
             p {
                 font-size: 2rem;
-                margin: 1rem;
+                margin: 0;
             }
 
             .sozial-media {
