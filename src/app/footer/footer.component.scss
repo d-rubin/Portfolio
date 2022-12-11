@@ -76,12 +76,54 @@ footer {
     width: 15% !important;
 
     img {
-        width: 20%;
+        width: 1.7rem;
         cursor: pointer;
         transition: transform 125ms ease-in-out;
 
         &:hover {
             transform: scale(1.3) translateX(13%) translateY(13%);
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    footer {
+        height: 50%;
+
+        div {
+            flex-direction: column;
+            gap: 0;
+            justify-content: unset;
+
+
+            .impressum {
+                flex-direction: column;
+                p {
+                    font-size: 4rem;
+                }
+
+                div {
+                    position: absolute;
+                    top: 230%;
+
+                    div {
+                        top: 100%;
+                        left: 25%;
+                    }
+                }
+            }
+
+            p {
+                font-size: 2rem;
+                margin: 1rem;
+            }
+
+            .sozial-media {
+                flex-direction: row;
+                width: 75% !important;
+                height: 4rem;
+                justify-content: space-evenly;
+            }
         }
     }
 }

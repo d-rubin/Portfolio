@@ -13,6 +13,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from "@angular/material/input";
 import { ContactComponent } from './contact/contact.component';
+import { MatIconModule } from "@angular/material/icon";
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ContactComponent } from './contact/contact.component';
     MatButtonModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

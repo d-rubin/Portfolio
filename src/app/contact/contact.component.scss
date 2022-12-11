@@ -1,10 +1,26 @@
 .contact {
+    position: relative;
     width: 80%;
-    padding: 0 10%;
-    margin: 10% 0;
+    padding: 10%;
     display: flex;
     justify-content: space-between;    
-    height: 80vh;
+    height: 65vh;
+
+    .mat-icon {
+        position: absolute;
+        top: 90%;
+        right: 10%;
+        font-size: 3rem;
+        font-weight: 200;
+        color: white;
+        width: 3rem;
+        height: 3rem;
+        transition: color 125ms ease-in-out;
+
+        &:hover {
+            color: #FA7902;
+        }
+    }
     
     div {
         position: relative;
@@ -31,6 +47,7 @@
         width: 45%;
 
         div {
+            position: relative;
             display: flex;
             align-items: center;
             width: 100%;
@@ -47,6 +64,7 @@
                 border-radius: 8px;
                 margin-bottom: 5%;
                 color: white;
+                outline: none;
 
                 &:hover {
                     border-color: #FA7902;
@@ -67,10 +85,24 @@
                 border-radius: 8px;
                 margin-bottom: 5%;
                 resize: none;
+                outline: none;
 
                 &:hover {
                     border-color: #FA7902;
                 }
+            }
+
+            .mat-icon {
+                position: absolute;
+                right: 3%;
+                top: 10%;
+                width: 1.3rem;
+                height: 1.3rem;
+                font-size: 1.3rem;
+            }
+
+            .text {
+                top: 5%;
             }
         }
 
@@ -86,4 +118,62 @@
         }
 
     }
+}
+
+@media (max-width: 900px) {
+    .contact {
+        flex-direction: column;
+        height: unset;
+
+        div {
+            width: 100%;
+
+            img {
+                top: 19%;
+                right: 102%;
+            }
+        }
+
+        form {
+            width: 100%;
+
+            div {
+                input {
+                    height: 4rem;
+                    font-size: 2rem;
+                }
+
+                .mat-icon {
+                    width: 2.3rem;
+                    height: 2.3rem;
+                    font-size: 2.3rem;
+                }
+
+                textarea {
+                    height: 15rem;
+                    font-size: 2rem;
+                }
+            }
+
+            button {
+                height: 5rem;
+                font-size: 2rem;
+                border-radius: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+
+    .contact {
+        form {
+            button {
+                font-size: 1.1rem;
+                height: 3rem;
+                border-radius: 8px;
+            }
+        }
+    }
+
 }

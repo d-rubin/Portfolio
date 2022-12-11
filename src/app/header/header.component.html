@@ -1,16 +1,17 @@
 <div class="header">
-    <p>Daniel</p>
+    <a href="#introduction">Daniel</a>
     <div>
         <div>
-            <a href="#" (click)="select('aboutMe')">About me</a>
+            <a href="#about-me-section" (click)="select('aboutMe')">About me</a>
             <div [class.border-red]="aboutMe"></div>
         </div>
         <div>
-            <a href="#" (click)="select('skills')">Skills</a>
+            <a href="#skills-section" (click)="select('skills')">Skills</a>
             <div [class.border-red]="skills"></div>
         </div>        <div>
-            <a href="#" (click)="select('portfolio')">Portfolio</a>
+            <a href="#portfolio-section" (click)="select('portfolio')">Portfolio</a>
             <div [class.border-red]="portfolio"></div>
         </div>
+        <mat-icon>menu</mat-icon>
     </div>
 </div>

@@ -2,10 +2,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 15%;
-    height: 80vh;
+    height: auto;
     width: 90%;
-    padding: 0 0 0 10%;
+    padding: 10% 0 0 10%;
 
     .about-me-img {
         position: relative;
@@ -55,6 +54,31 @@
                 width: 50%;
                 margin-right: 5%;
             }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .about-me {
+        width: 80%;
+        padding: 10% 10% 0 10%;
+
+        div {
+            width: 100%;
+            text-align: left;
+
+            div {
+                img {
+                    height: 46%;
+                    width: 50%;
+                    object-fit: contain;
+                    margin-right: 3rem;
+                }
+            }
+        }
+
+        .about-me-img {
+            display: none;
         }
     }
 }

@@ -3,10 +3,8 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
-    margin-top: 10%;
-    height: 60vh;
     width: 80%;
-    padding: 0 10% 0 10%;
+    padding: 10% 10% 0 10%;
 
     .title {
         position: relative;
@@ -62,5 +60,49 @@
             margin: 2.5%;
             width: 16%;
         };
+    }
+}
+
+@media (max-width: 900px) {
+    .skills {
+        position: relative;
+        flex-direction: column;
+        padding: 10% 10% 15% 10%;
+        width: 80%;
+        align-items: flex-end;
+
+        div {
+            width: 100%;
+            
+            img {
+                width: 15%;
+            }
+        }
+
+        .title {
+            position: unset;
+            h1 {
+                text-align: right;
+            }
+
+            p {
+                text-align: right;
+            }
+
+            img {
+                position: absolute;
+                top: 19%;
+                right: 0%;
+                width: 8%;
+                height: 5px;
+                margin: 0;
+            }
+
+            a {
+                position: absolute;
+                top: 90%;
+                left: calc(50vw - 5rem);
+            }
+        }
     }
 }

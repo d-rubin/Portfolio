@@ -1,24 +1,25 @@
-<div class="contact">
+<div class="contact" id="contact-section">
     <div>
-        <img src="/assets/img/LINE 5.png">
+        <img src="assets/img/LINE 5.png">
         <h1>Contact</h1>
         <h2>Got a problem to solve?</h2>
         <p>Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your projects with my work.<br><br>
             Need a Frontend developer? <b>Contact me!</b></p>
     </div>
-    <form action="">
+    <form action="http://daniel-rubin.developerakademie.com/send_mail/send_mail.php" method="POST">
         <div>
-            <input type="text" placeholder="Your name">
-            <img src="" alt="">
+            <input name="name" id="name" type="text" placeholder="Your name" required>
+            <mat-icon>check_circle</mat-icon>
         </div>
         <div>
-            <input type="email" placeholder="Your email">
-            <img src="" alt="">
+            <input name="email" id="email" type="email" placeholder="Your email" required>
+            <mat-icon>check_circle</mat-icon>
         </div>
         <div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
-            <img src="" alt="">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message" required></textarea>
+            <mat-icon class="text">check_circle</mat-icon>
         </div>
-        <button mat-raised-button>Send message :)</button>
+        <button type="submit" mat-raised-button>Send message :)</button>
     </form>
+    <a href="#introduction"><mat-icon>arrow_circle_up</mat-icon></a>
 </div>
