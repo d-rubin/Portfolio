@@ -11,7 +11,9 @@ export class ContactComponent implements OnInit {
   @Input() email: string = '';
   @Input() message: string = '';
 
-  constructor() { }
+  constructor() { 
+    // super().resetSelect()
+  }
 
   ngOnInit(): void {
   }

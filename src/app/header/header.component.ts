@@ -6,10 +6,10 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  aboutMe: boolean = false;
-  skills: boolean = false;
-  portfolio: boolean = false;
-  menu: boolean = true;
+  public aboutMe: boolean = false;
+  public skills: boolean = false;
+  public portfolio: boolean = false;
+  public menu: boolean = true;
 
   @Input() icon:string = 'menu';
 
@@ -37,6 +37,12 @@ export class HeaderComponent implements OnInit {
         this.portfolio = true;
         break;
     }
+  }
+
+  public resetSelect() {
+    this.aboutMe = false;
+    this.skills = false;
+    this.portfolio = false;
   }
 
   mobileMenu() {
