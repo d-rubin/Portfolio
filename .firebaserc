@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "homepage-bb9ea": {
+      "hosting": {
+        "portfolio": [
+          "homepage-bb9ea"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "homepage-bb9ea"
+  }
+}
