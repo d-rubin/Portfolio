@@ -109,8 +109,8 @@
             "prerender": false,
             "ssr": false,
             "browserTarget": "portfolio:build:production",
-            "firebaseProject": "homepage-bb9ea",
-            "firebaseHostingSite": "homepage-bb9ea"
+            "firebaseProject": "homepage-46326",
+            "firebaseHostingSite": "homepage-46326"
           }
         }
       }

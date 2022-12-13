@@ -1,14 +1,14 @@
 {
   "targets": {
-    "homepage-bb9ea": {
+    "homepage-46326": {
       "hosting": {
         "portfolio": [
-          "homepage-bb9ea"
+          "homepage-46326"
         ]
       }
     }
   },
   "projects": {
-    "default": "homepage-bb9ea"
+    "default": "homepage-46326"
   }
 }

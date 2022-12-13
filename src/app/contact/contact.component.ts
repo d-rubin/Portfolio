@@ -7,9 +7,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  public name: any;
-  public email: any;
-  public message: any;
+  name: any;
+  email: any;
+  message: any;
 
   constructor() { 
   }

@@ -8,15 +8,15 @@
     </div>
     <form action="ftp://f0150af6@daniel-rubin.developerakademie.com/send_mail/send_mail.php" method="POST">
         <div>
-            <input name="name" id="name" type="text" placeholder="Your name" [(ngModel)]="name" required>
+            <input name="name" #name type="text" placeholder="Your name" [(ngModel)]="name" required>
             <mat-icon>check_circle</mat-icon>
         </div>
         <div>
-            <input name="email" id="email" type="email" placeholder="Your email" [(ngModel)]="email" required>
+            <input name="email" #email type="email" placeholder="Your email" [(ngModel)]="email" required>
             <mat-icon>check_circle</mat-icon>
         </div>
         <div>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message" [(ngModel)]="message" required></textarea>
+            <textarea name="message" #message cols="30" rows="10" placeholder="Your message" [(ngModel)]="message" required></textarea>
             <mat-icon class="text" id="messageIcon">check_circle</mat-icon>
         </div>
         <button type="submit">Send message :)</button>
