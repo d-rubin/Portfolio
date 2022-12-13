@@ -17,6 +17,7 @@ import { MatIconModule } from "@angular/material/icon";
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { ImprintComponent } from './imprint/imprint.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
     AboutMeComponent,
     SkillsComponent,
     PortfolioComponent,
-    ContactComponent
+    ContactComponent,
+    ImprintComponent
   ],
   imports: [
     BrowserModule,
