@@ -17,4 +17,10 @@ export class ContactComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  checkText(text: string) {
+    if(text == '') {
+
+    }
+  }
 }
