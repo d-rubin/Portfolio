@@ -85,3 +85,29 @@
         top: 488%;
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .img-background {
+        top: 10%;
+    }
+
+    .shadow1 {
+        right: 10%;
+        width: 40%;
+    }
+
+    .shadow2 {
+        left: 0;
+        top: 196%;
+    }
+
+    .shadow3 {
+        top: 308%;
+        left: 0;
+    }
+
+    .shadow4 {
+        right: 0;
+        top: 350%;
+    }
+}
