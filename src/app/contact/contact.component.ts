@@ -7,12 +7,11 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  @Input() name: string = '';
-  @Input() email: string = '';
-  @Input() message: string = '';
+  public name: any;
+  public email: any;
+  public message: any;
 
   constructor() { 
-    // super().resetSelect()
   }
 
   ngOnInit(): void {
@@ -20,7 +19,7 @@ export class ContactComponent implements OnInit {
 
   checkText(text: string) {
     if(text == '') {
-
+      
     }
   }
 }

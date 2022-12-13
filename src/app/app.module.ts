@@ -10,7 +10,7 @@ import { IntroductionComponent } from './introduction/introduction.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from "@angular/material/input";
 import { ContactComponent } from './contact/contact.component';
 import { MatIconModule } from "@angular/material/icon";
@@ -18,6 +18,7 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { ImprintComponent } from './imprint/imprint.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { ImprintComponent } from './imprint/imprint.component';
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,
+    FormsModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFirestore(() => getFirestore())
   ],
