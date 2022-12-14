@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, VERSION } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +7,21 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  name: any;
-  email: any;
-  message: any;
+  focusName: boolean = false;
+  focusEmail: boolean = false;
+  focusMessage: boolean = false;
+
+  iconName: string = 'check_circle';
+  iconEmail: string = 'check_circle';
+  iconMessage: string = 'check_circle';
+  
+
+  nameRed: boolean = false;
+  nameGreen: boolean = false;  
+  emailRed: boolean = false;
+  emailGreen: boolean = false;  
+  messageRed: boolean = false;
+  messageGreen: boolean = false;
 
   constructor() { 
   }
@@ -17,9 +29,18 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  checkText(text: string) {
-    if(text == '') {
-      
+  changeColors(idField: any, ifFocus: boolean, red: boolean, green: boolean, icon: string) {
+    if(idField.value == '' && ifFocus) {
+      icon = 'error';
+      red = true;
+    }
+    else if(idField.value != '' && !ifFocus) {
+      green = true;
+      icon = 'check_circle';
+    }
+    else {
+      green = false;
+      red = false
     }
   }
 }
