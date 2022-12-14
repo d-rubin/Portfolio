@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { FooterComponent } from '../footer/footer.component';
+
 
 @Component({
   selector: 'app-header',
@@ -13,11 +15,14 @@ export class HeaderComponent implements OnInit {
 
   @Input() icon:string = 'menu';
 
-  constructor() { }
+  constructor(private footer: FooterComponent) { }
 
   ngOnInit(): void {
   }
 
+  closeImprint() {
+    this.footer.closeImprint();
+  }
 
   select(key: string) {
     switch (key) {

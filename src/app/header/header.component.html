@@ -1,23 +1,23 @@
 <div class="header">
-    <a href="#introduction" (click)="resetSelect()">Daniel</a>
+    <a href="#introduction" (click)="resetSelect(); closeImprint()">Daniel</a>
     <div>
         <div>
-            <a href="#about-me-section" (click)="select('aboutMe')">About me</a>
+            <a href="#about-me-section" (click)="select('aboutMe'); closeImprint()">About me</a>
             <div [class.border-red]="aboutMe"></div>
         </div>
         <div>
-            <a href="#skills-section" (click)="select('skills')">Skills</a>
+            <a href="#skills-section" (click)="select('skills'); closeImprint()">Skills</a>
             <div [class.border-red]="skills"></div>
         </div>        <div>
-            <a href="#portfolio-section" (click)="select('portfolio')">Portfolio</a>
+            <a href="#portfolio-section" (click)="select('portfolio'); closeImprint()">Portfolio</a>
             <div [class.border-red]="portfolio"></div>
         </div>
-        <mat-icon (click)="mobileMenu()">{{icon}}</mat-icon>
+        <mat-icon (click)="mobileMenu(); closeImprint()">{{icon}}</mat-icon>
     </div>
 </div>
 <div class="mobile-menu" scroll="no" [class.d-none]="menu">
-    <a (cllick)="closeMenu()" href="#about-me-section">About me</a>
-    <a (cllick)="closeMenu()" href="#skills-section">Skills</a>
-    <a (cllick)="closeMenu()" href="#portfolio-section">Portfolio</a>
-    <a (cllick)="closeMenu()" href="#contact-section">Contact</a>
+    <a (cllick)="closeMenu(); closeImprint()" href="#about-me-section">About me</a>
+    <a (cllick)="closeMenu(); closeImprint()" href="#skills-section">Skills</a>
+    <a (cllick)="closeMenu(); closeImprint()" href="#portfolio-section">Portfolio</a>
+    <a (cllick)="closeMenu(); closeImprint()" href="#contact-section">Contact</a>
 </div>
