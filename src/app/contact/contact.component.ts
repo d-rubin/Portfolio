@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef, VERSION } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, VERSION, Input } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
