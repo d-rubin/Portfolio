@@ -14,7 +14,11 @@
                 (focus)="focusName = true"
                 [class.border-green]="nameGreen"
                 required>
-            <mat-icon #nameIcon>{{iconName}}</mat-icon>
+            <mat-icon #nameIcon 
+                [class.color-red]="nameRed"
+                [class.color-geen]="nameGreen"
+                >{{iconName}}
+            </mat-icon>
         </div>
         <div>
             <input name="email" #inputEmail type="email" placeholder="Your email" 
@@ -24,7 +28,11 @@
                 [class.border-green]="emailGreen"
 
                 required>
-            <mat-icon #emailIcon >{{iconEmail}}</mat-icon>
+            <mat-icon #emailIcon 
+                [class.color-red]="emailRed"
+                [class.color-geen]="emailGreen"
+                >{{iconEmail}}
+            </mat-icon>
         </div>
         <div>
             <textarea name="message" #inputMessage cols="30" rows="10" placeholder="Your message" 
@@ -33,9 +41,12 @@
                 (focus)="focusMessage = true"
                 [class.border-green]="messageGreen"
 
-                required>
-            </textarea>
-            <mat-icon class="text" #messageIcon >{{iconMessage}}</mat-icon>
+                required></textarea>
+            <mat-icon class="text" #messageIcon 
+                [class.color-red]="messageRed"
+                [class.color-geen]="messageGreen"
+                >{{iconMessage}}
+            </mat-icon>
         </div>
         <button type="submit">Send message :)</button>
     </form>
