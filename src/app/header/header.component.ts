@@ -1,7 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
-// import { FooterComponent } from '../footer/footer.component';
+import { Component, Injectable, Input, OnInit } from '@angular/core';
+import { AppComponent } from '../app.component';
 
-
+@Injectable()
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -16,14 +16,14 @@ export class HeaderComponent implements OnInit {
 
   @Input() icon:string = 'menu';
 
-  constructor() { }
+  constructor(private appComponent: AppComponent) { }
 
   ngOnInit(): void {
   }
 
-  // closeImprint() {
-  //   this.footer.closeImprint();
-  // }
+  closeImprint() {
+    this.appComponent.closeImprint();
+  }
 
   select(key: string) {
     switch (key) {

@@ -1,24 +1,23 @@
-import { Component, OnInit } from '@angular/core';
-// import { FooterComponent } from './footer/footer.component';
+import { Component, Injectable, OnInit } from '@angular/core';
 
+@Injectable()
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  // private _imprint: any = false;
-
+  public imprint: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  // showImprint() {
-  //   this.footer.showImprint();
-  // }
+  closeImprint() {
+    this.imprint = false;
+  }
 
-  // closeImprint() {
-  //   this.footer.closeImprint();
-  // }
+  openImprint() {
+    this.imprint = true;
+  }
 }

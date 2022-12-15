@@ -44,6 +44,20 @@
     z-index: -2;
 }
 
+app-imprint {
+    height: 66vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5%;
+}
+
+
+.d-none {
+    display: none;
+}
+
 @media (max-width: 900px) {
     .seperate-line {
         top: 55%;
