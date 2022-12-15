@@ -18,6 +18,10 @@ export class ContactComponent implements OnInit {
   emailGreen: boolean = false;
   nameRed: boolean = false;
   nameGreen: boolean = false;
+
+  nameValue: string = '';
+  emailValue: string = '';
+  messageValue: string = '';
   
   elementControl = new FormControl('inputEmail');
 
@@ -60,19 +64,25 @@ export class ContactComponent implements OnInit {
   colorGreen(field: string) {
     switch (field) {
       case 'message':
+        if(this.messageValue != '') {
           this.messageRed = false;
           this.messageGreen = true;
           this.iconMessage = 'check_circle';
+        }
         break;
       case 'email':
-        this.emailRed = false;
-        this.emailGreen = true;
-        this.iconEmail = 'check_circle';
+        if(this.emailValue != '') {
+          this.emailRed = false;
+          this.emailGreen = true;
+          this.iconEmail = 'check_circle';
+        }
         break;
       default:
-        this.nameRed = false;
-        this.nameGreen = true;
-        this.iconName = 'check_circle';
+        if(this.nameValue != '') {
+          this.nameRed = false;
+          this.nameGreen = true;
+          this.iconName = 'check_circle';
+        }
         break;
     }
   }

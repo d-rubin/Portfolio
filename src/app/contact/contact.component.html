@@ -7,12 +7,13 @@
             projects with my work.<br><br>
             Need a Frontend developer? <b>Contact me!</b></p>
     </div>
-    <form action="https://daniel-rubin.de/daniel-rubin.de/send_mail/send_mail.php" method="POST">
+    <form action="https://daniel-rubin.de/send_mail/send_mail.php" method="POST">
         <div>
             <input name="name" #inputFullname type="text" placeholder="Your name" 
                 (focus)="colorRed('name')"
                 (blur)="colorGreen('name')"
                 [class.border-green]="nameGreen"
+                [(ngModel)]="nameValue"
                 required>
             <mat-icon #nameIcon
                 [class.color-red]="nameRed" 
@@ -25,6 +26,7 @@
                 (focus)="colorRed('email')"
                 (blur)="colorGreen('email')"
                 [class.border-green]="emailGreen"
+                [(ngModel)]="emailValue"
                 required>
             <mat-icon #emailIcon
                 [class.color-red]="emailRed" 
@@ -38,6 +40,7 @@
                 (blur)="colorGreen('message')"
                 (change)="changeText('message')"
                 [class.border-green]="messageGreen"
+                [(ngModel)]="messageValue"
                 required
             ></textarea>
             <mat-icon class="text" #messageIcon 
