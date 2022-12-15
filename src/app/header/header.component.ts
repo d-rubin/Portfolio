@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { FooterComponent } from '../footer/footer.component';
+// import { FooterComponent } from '../footer/footer.component';
 
 
 @Component({
@@ -13,16 +13,17 @@ export class HeaderComponent implements OnInit {
   public portfolio: boolean = false;
   public menu: boolean = true;
 
+
   @Input() icon:string = 'menu';
 
-  constructor(private footer: FooterComponent) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
 
-  closeImprint() {
-    this.footer.closeImprint();
-  }
+  // closeImprint() {
+  //   this.footer.closeImprint();
+  // }
 
   select(key: string) {
     switch (key) {
@@ -54,14 +55,18 @@ export class HeaderComponent implements OnInit {
     if(this.menu) {
       this.menu = false;
       this.icon = 'close';
+      document.body.style.overflowY = "hidden"
+
     }
     else {
       this.menu = true;
-      this.icon = 'menu'
+      this.icon = 'menu';
     }
   }
 
   closeMenu() {
     this.menu = true;
+    document.body.style.overflowY = "scroll"
+    this.icon = 'menu';
   }
 }

@@ -1,4 +1,5 @@
-import { Component, OnInit, ViewChild, ElementRef, VERSION, Input } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { FormControl } from "@angular/forms";
 
 @Component({
   selector: 'app-contact',
@@ -7,21 +8,18 @@ import { Component, OnInit, ViewChild, ElementRef, VERSION, Input } from '@angul
 })
 export class ContactComponent implements OnInit {
 
-  focusName: boolean = false;
-  focusEmail: boolean = false;
-  focusMessage: boolean = false;
+  @Input() iconName: string = 'check_circle';
+  @Input() iconEmail: string = 'check_circle';
+  @Input() iconMessage: string = 'check_circle';
 
-  iconName: string = 'check_circle';
-  iconEmail: string = 'check_circle';
-  iconMessage: string = 'check_circle';
-  
-
-  nameRed: boolean = false;
-  nameGreen: boolean = false;  
-  emailRed: boolean = false;
-  emailGreen: boolean = false;  
-  messageRed: boolean = false;
   messageGreen: boolean = false;
+  messageRed: boolean = false;
+  emailRed: boolean = false;
+  emailGreen: boolean = false;
+  nameRed: boolean = false;
+  nameGreen: boolean = false;
+  
+  elementControl = new FormControl('inputEmail');
 
   constructor() { 
   }
@@ -29,18 +27,53 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  changeColors(idField: any, ifFocus: boolean, red: boolean, green: boolean, icon: string) {
-    if(idField.value == '' && ifFocus) {
-      icon = 'error';
-      red = true;
+  changeText(field: string) {
+    switch (field) {
+      case 'message':
+        break;
+    
+      default:
+        break;
     }
-    else if(idField.value != '' && !ifFocus) {
-      green = true;
-      icon = 'check_circle';
+  }
+
+  colorRed(field: string) {
+    switch (field) {
+      case 'message':
+        this.messageRed = true;
+        this.messageGreen = false;
+        this.iconMessage = 'error';
+        break;
+      case 'email':
+        this.emailRed = true;
+        this.emailGreen = false;
+        this.iconEmail = 'error';
+        break;
+      default:
+        this.nameRed = true;
+        this.nameGreen = false;
+        this.iconName = 'error';
+        break;
     }
-    else {
-      green = false;
-      red = false
+  }
+
+  colorGreen(field: string) {
+    switch (field) {
+      case 'message':
+          this.messageRed = false;
+          this.messageGreen = true;
+          this.iconMessage = 'check_circle';
+        break;
+      case 'email':
+        this.emailRed = false;
+        this.emailGreen = true;
+        this.iconEmail = 'check_circle';
+        break;
+      default:
+        this.nameRed = false;
+        this.nameGreen = true;
+        this.iconName = 'check_circle';
+        break;
     }
   }
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FooterComponent } from './footer/footer.component';
+// import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -7,18 +7,18 @@ import { FooterComponent } from './footer/footer.component';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  private _imprint: any = false;
+  // private _imprint: any = false;
 
-  constructor(private footer: FooterComponent) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
 
-  showImprint() {
-    this.footer.showImprint();
-  }
+  // showImprint() {
+  //   this.footer.showImprint();
+  // }
 
-  closeImprint() {
-    this.footer.closeImprint();
-  }
+  // closeImprint() {
+  //   this.footer.closeImprint();
+  // }
 }

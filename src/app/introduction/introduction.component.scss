@@ -12,8 +12,9 @@
         flex-direction: column;
         align-items: center;
         gap: 3rem;
-        width: 65%;
+        width: 50%;
         z-index: 1;
+        padding-right: 5%;
 
         div {
             flex-direction: row;
@@ -24,10 +25,11 @@
             
             p {
                 rotate: 270deg;
-                font-size: 3.5rem;
+                font-size: 3rem;
                 font-weight: 400;
                 margin: 0;
                 white-space: nowrap;
+                text-align: start;
             }
 
             div {
@@ -35,10 +37,13 @@
                 gap: 0;
                 width: auto;
                 margin: 0;
+                h1 {
+                    font-size: 4rem;
+                }
 
                 h2 {
                     color: #FF4747;
-                    font-size: 2.5rem;
+                    font-size: 2rem;
                     font-weight: 400;
                     margin: 0;
                     white-space: nowrap;
@@ -62,9 +67,10 @@
     }
 
     img {
-        width: 35%;
-        height: 100%;
-        object-fit: cover;
+        margin-top: 5%;
+        width: 40%;
+        height: 90%;
+        object-fit: contain;
         z-index: -2;
     }
 }
@@ -138,7 +144,6 @@ span {
     .introduction {
         flex-direction: column;
         margin-bottom: 10%;
-        gap: 15vh;
         padding-top: 8%;
         height: auto;
 
@@ -149,7 +154,6 @@ span {
 
         div {
             width: 100%;
-            margin-right: 5%;
         }
     }
 
@@ -174,6 +178,15 @@ span {
     }
 }
 
+@media (max-width: 750px) {
+    .introduction {
+        img {
+            width: 75%;
+            object-fit: cover;
+        }
+    }
+}
+
 @media (max-width: 590px) {
     .introduction {
         div {
@@ -184,7 +197,7 @@ span {
                 
                 div {
                     h1 {
-                        font-size: 3rem;
+                        font-size: 4rem;
                     }
                     h2 {
                         font-size: 2rem; 
@@ -192,12 +205,27 @@ span {
                 }
             }
         }
+        img {
+            width: 80%;
+            margin-top: 5%;
+        }
+    }
+}
+
+@media (max-width: 530px) {
+    .introduction {
+        img {
+            width: 92%;
+            margin-top: 10%;
+        }
     }
 }
 
 @media (max-width: 450px) {
     .introduction {
+        gap: 5vh;
         div {
+
             div {
                 p {
                     font-size: 2rem;
@@ -205,13 +233,25 @@ span {
                 
                 div {
                     h1 {
-                        font-size: 2.5rem;
+                        font-size: 3rem;
                     }
                     h2 {
                         font-size: 1.5rem; 
                     }
                 }
             }
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 370px) {
+    .introduction {
+        img {
+            margin-top: 20%;
         }
     }
 }

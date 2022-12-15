@@ -46,7 +46,9 @@ footer {
         position: relative;
         flex-direction: column-reverse;
         height: 20%;
+        width: min-content;
         justify-content: space-between;
+        cursor: pointer;
         
         &:hover {
             div {
@@ -63,8 +65,8 @@ footer {
 
         div {
             position: absolute;
-            left: 7%;
-            width: 5rem;
+            left: 0%;
+            width: 3rem;
             height: 1%;
             border-bottom: 0.2rem solid ;
             border-color: #141D2F;
@@ -109,7 +111,7 @@ footer {
 
                     div {
                         top: 100%;
-                        left: 33%;
+                        left: 0%;
                         width: 3rem;
                     }
                 }

@@ -5,13 +5,13 @@
 <img class="shadow2" src="assets/img/GReen shadow.png">
 <img class="shadow3" src="assets/img/Vector 5.png">
 <img class="shadow4" src="assets/img/GReen shadow (1).png">
-<app-imprint #imprint ></app-imprint>
+<!-- <app-imprint ></app-imprint> -->
 
 
-<app-introduction #intro *ngIf="!imprint"></app-introduction>
-<app-about-me #aboutMe *ngIf="!imprint"></app-about-me>
-<app-skills #skills *ngIf="!imprint"></app-skills>
-<app-portfolio #portfolio *ngIf="!imprint"></app-portfolio>
-<app-contact #contact *ngIf="!imprint"></app-contact>
+<app-introduction ></app-introduction>
+<app-about-me ></app-about-me>
+<app-skills ></app-skills>
+<app-portfolio ></app-portfolio>
+<app-contact ></app-contact>
 
-<app-footer [imprint]="imprint"></app-footer>
+<app-footer ></app-footer>
