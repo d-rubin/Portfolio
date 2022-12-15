@@ -14,16 +14,16 @@
 
         .line-left {
             position: absolute;
-            top: 35%;
-            left: 8%;
+            top: 31%;
+            left: 18%;
         
         }
         
         .line-right {
             position: absolute;
-            top: 35%;
-            left: 80%;
-            width: 102%;
+            top: 31%;
+            right: -52%;
+            width: 77%;
             height: 4px;
         }
     }
@@ -43,14 +43,14 @@
             text-align: end;
 
             h2 {
-                font-size: 2rem;
+                font-size: 2.5rem;
                 color: #FF4747;
                 font-weight: 700;
                 margin-top: 0;
             }
 
             h3 {
-                font-size: 1rem;
+                font-size: 2rem;
                 color: #FA7902;
                 font-weight: 400;
                 margin: 0;
@@ -66,10 +66,10 @@
 
             .live-test {
                 padding: 0;
-                width: 7rem;
-                height: 3rem;
+                width: 9rem;
+                height: 4rem;
                 background-color: #FF4747;
-                font-size: 1.2rem;
+                font-size: 1.5rem;
                 border-radius: 8px;
                 transition: background-color 125ms ease-in-out;
                 cursor: pointer;
@@ -81,10 +81,10 @@
 
             .github {
                 padding: 0;
-                width: 7rem;
-                height: 3rem;
+                width: 9rem;
+                height: 4rem;
                 border-color: #FA7902; 
-                font-size: 1.2rem;
+                font-size: 1.5rem;
                 color: white;
                 cursor: pointer;
                 border-radius: 8px;
@@ -118,14 +118,14 @@
             text-align: start;
 
             h2 {
-                font-size: 2rem;
+                font-size: 2.5rem;
                 color: #FF4747;
                 font-weight: 700;
                 margin-top: 0;
             }
 
             h3 {
-                font-size: 1rem;
+                font-size: 2rem;
                 color: #FA7902;
                 font-weight: 400;
                 margin: 0;
@@ -141,10 +141,10 @@
 
             .live-test {
                 padding: 0;
-                width: 7rem;
-                height: 3rem;
+                width: 9rem;
+                height: 4rem;
                 background-color: #FF4747;
-                font-size: 1.2rem;
+                font-size: 1.5rem;
                 border-radius: 8px;
                 transition: background-color 125ms ease-in-out;
                 cursor: pointer;
@@ -156,10 +156,10 @@
 
             .github {
                 padding: 0;
-                width: 7rem;
-                height: 3rem;
+                width: 9rem;
+                height: 4rem;
                 border-color: #FA7902; 
-                font-size: 1.2rem;
+                font-size: 1.5rem;
                 color: white;
                 cursor: pointer;
                 border-radius: 8px;
@@ -186,14 +186,14 @@
             }
 
             .line-right {
-                width: 15%;
-                top: 30%;
-                left: 81%;
+                width: 37%;
+                top: 25%;
+                right: -13%;
             }
 
             .line-left {
-                top: 30%;
-                left: 5%;
+                top: 25%;
+                left: 14%;
             }
         }
 
@@ -232,21 +232,27 @@
 
 
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
     .portfolio {
         .title {
-            .line-left, .line-right {
-                top: 32%;
+            .line-left {
+                top: 23%;
+                left: 8%;
+            }
+
+            .line-right {
+                top: 23%;
+                width: 32%;
             }
         }
     }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 600px) {
     .portfolio {
         .title {
             .line-left, .line-right {
-                top: 28%;
+                top: 24%;
             }
 
             .line-left {
@@ -260,37 +266,39 @@
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     .portfolio {
         .title {
 
             .line-left {
                 left: -13%;
-                width: 25%;
+                width: 20%;
                 height: 4px;
             }
 
             .line-right {
-                left: 88%;
-                width: 25%;
+                left: 93%;
+                width: 20%;
             }
         }
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 400px) {
     .portfolio {
         .title {
 
             .line-left {
+                top: 21%;
                 left: -13%;
-                width: 18%;
+                width: 10%;
                 height: 4px;
             }
 
             .line-right {
-                left: 96%;
-                width: 17%;
+                top: 21%;
+                left: 102%;
+                width: 10%;
             }
         }
     }

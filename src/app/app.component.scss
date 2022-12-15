@@ -85,12 +85,16 @@ app-imprint {
     }
 
     .shadow4 {
-        top: 620%;
+        top: 400%;
         right: -14%;
     }
 }
 
 @media (max-width: 600px) {
+    .img-background {
+        top: 10%;
+    }
+
     .shadow3 {
         top: 410%;
     }
@@ -100,10 +104,17 @@ app-imprint {
     }
 }
 
-@media only screen and (max-width: 500px) {
-    .img-background {
-        top: 10%;
+@media (max-width: 400px) {
+    .seperate-line {
+        top: 45%;
     }
+
+    .img-background {
+        top: 15%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
 
     .shadow1 {
         right: 10%;

@@ -43,7 +43,7 @@
 
                 h2 {
                     color: #FF4747;
-                    font-size: 2rem;
+                    font-size: 2.4rem;
                     font-weight: 400;
                     margin: 0;
                     white-space: nowrap;
@@ -148,7 +148,7 @@ span {
         height: auto;
 
         img {
-            width: 57%;
+            width: 70%;
             height: auto;
         }
 
@@ -181,8 +181,9 @@ span {
 @media (max-width: 750px) {
     .introduction {
         img {
-            width: 75%;
+            width: 85%;
             object-fit: cover;
+            margin-top: 10%;
         }
     }
 }
@@ -192,7 +193,7 @@ span {
         div {
             div {
                 p {
-                    font-size: 2.5rem;
+                    font-size: 3rem;
                 }
                 
                 div {
@@ -200,14 +201,14 @@ span {
                         font-size: 4rem;
                     }
                     h2 {
-                        font-size: 2rem; 
+                        font-size: 2.4rem; 
                     }
                 }
             }
         }
         img {
             width: 80%;
-            margin-top: 5%;
+            margin-top: 30%;
         }
     }
 }
@@ -215,8 +216,8 @@ span {
 @media (max-width: 530px) {
     .introduction {
         img {
-            width: 92%;
-            margin-top: 10%;
+            width: 100%;
+            margin-top: 20%;
         }
     }
 }
@@ -236,14 +237,14 @@ span {
                         font-size: 3rem;
                     }
                     h2 {
-                        font-size: 1.5rem; 
+                        font-size: 1.8rem; 
                     }
                 }
             }
         }
 
         img {
-            width: 100%;
+            margin-top: 30%;
         }
     }
 }
@@ -251,7 +252,7 @@ span {
 @media (max-width: 370px) {
     .introduction {
         img {
-            margin-top: 20%;
+            margin-top: 50%;
         }
     }
 }
