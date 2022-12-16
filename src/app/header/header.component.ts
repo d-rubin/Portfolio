@@ -61,6 +61,7 @@ export class HeaderComponent implements OnInit {
     else {
       this.menu = true;
       this.icon = 'menu';
+      document.body.style.overflowY = "scroll"
     }
   }
 
