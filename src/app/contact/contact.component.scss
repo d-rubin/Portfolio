@@ -118,6 +118,7 @@
             color: white;
             font-size: 2rem;
             background-color: #FA7902;
+            border: none;
             transition: background-color 125ms ease-in-out, transform 125ms ease-in-out;
             cursor: pointer;
         
@@ -205,6 +206,34 @@
 
 }
 
+@media(max-width: 600px) {
+    .contact {
+        div {
+            img {
+                top: 12%;
+                right: 104%;
+                width: 8%;
+            }
+        }
+    }
+}
+@media(max-width: 500px) {
+    .contact {
+        div {
+            img {
+                top: 9%;
+                right: 104%;
+                width: 8%;
+            }
+        }
+        form {
+            button {
+                width: 15rem;
+            }
+        }
+    }
+}
+
 @media (max-width: 390px) {
 
     .contact {
@@ -217,9 +246,9 @@
 
         div {
             img {
-                top: 12%;
+                top: 9%;
             }
         }
     }
-
 }
+

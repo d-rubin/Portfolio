@@ -123,9 +123,10 @@
 
 @media (max-width: 700px) {
     .skills {
+        padding-top: 20%;
         .title {
             img {
-                top: 17%;
+                top: 23%;
                 right: 0%;
                 width: 25%;
             }
@@ -133,12 +134,53 @@
     }
 }
 
+@media (max-width: 600px) {
+    .skills {
+        .title {
+            img {
+                top: 21%;
+                right: 0%;
+                width: 16%;
+            }
+        }
+    }
+}
+
 @media (max-width: 500px) {
-    .title {
-        img {
-            top: 16%;
-            right: 0%;
-            width: 16%;
+    .skills {
+        .title {
+            width: 100%;
+            img {
+                top: 23.5%;
+                right: 0%;
+                width: 16%;
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .skills {
+        .title {
+            width: 100%;
+            img {
+                top: 22%;
+                right: 0%;
+                width: 16%;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .skills {
+        .title {
+            width: 100%;
+            img {
+                top: 22%;
+                right: 0%;
+                width: 12%;
+            }
         }
     }
 }
