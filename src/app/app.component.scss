@@ -45,12 +45,11 @@
 }
 
 app-imprint {
-    height: 66vh;
+    height: 76vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 5%;
 }
 
 
@@ -88,6 +87,13 @@ app-imprint {
         top: 400%;
         right: -14%;
     }
+
+    app-imprint {
+        height: 73vh;
+        h1 {
+            padding-top: 20%
+        }
+    }
 }
 
 @media (max-width: 600px) {
@@ -104,7 +110,7 @@ app-imprint {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .seperate-line {
         top: 45%;
     }
@@ -140,5 +146,8 @@ app-imprint {
 @media only screen and (max-width: 400px) {
     .shadow4 {
         top: 471%;
+    }
+    .seperate-line {
+        top: 49%;
     }
 }

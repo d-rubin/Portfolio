@@ -2,7 +2,7 @@ footer {
     display: flex;
     align-items: center;
     width: 80%;
-    height: 30%;
+    height: 23%;
     padding: 0% 10%;
     font-size: 2rem;
     font-weight: 600;
@@ -90,7 +90,7 @@ footer {
 
 @media (max-width: 900px) {
     footer {
-        height: 26%;
+        height: 26vh;
 
         div {
             flex-direction: column;
@@ -101,6 +101,7 @@ footer {
 
             .impressum {
                 flex-direction: column;
+                padding-top: 1rem;
                 p {
                     font-size: 3rem;
                 }

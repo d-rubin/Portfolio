@@ -55,11 +55,27 @@
 
     div {
         width: 55%;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
 
-        img {
-            margin: 2.5%;
-            width: 16%;
-        };
+        div {
+            width: 130px;
+            height: 140px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+
+            img {
+                width: 40%;
+
+            }
+
+            p {
+                margin: 0;
+            }
+        }
     }
 }
 
@@ -71,6 +87,10 @@
                 right: -36%;
                 width: 26%;
             }
+        }
+
+        div {
+            grid-template-columns: auto auto auto;
         }
     }
 }
@@ -85,6 +105,10 @@
 
         div {
             width: 100%;
+            margin-top: 1rem;
+            justify-content: center;
+            grid-template-columns: auto auto auto auto;
+
             
             img {
                 width: 15%;
@@ -105,7 +129,7 @@
 
             img {
                 position: absolute;
-                top: 16%;
+                top: 15%;
                 right: 0%;
                 width: 28%;
                 height: 5px;
@@ -126,9 +150,37 @@
         padding-top: 20%;
         .title {
             img {
-                top: 23%;
+                top: 17%;
                 right: 0%;
                 width: 25%;
+            }
+
+            button {
+                margin-top: 40%;
+            }
+        }
+
+        div {
+            grid-template-columns: auto auto auto;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .skills {
+        .title {
+            img {
+                top: 16%;
+            }
+        }
+    }
+}
+
+@media (max-width: 660px) {
+    .skills {
+        .title {
+            img {
+                top: 16.5%;
             }
         }
     }
@@ -138,9 +190,18 @@
     .skills {
         .title {
             img {
-                top: 21%;
-                right: 0%;
-                width: 16%;
+                top: 15.5%;
+            }
+        }
+    }
+}
+
+@media (max-width: 570px) {
+    .skills {
+        .title {
+            img {
+                width: 14%;
+                top: 14%;
             }
         }
     }
@@ -151,10 +212,18 @@
         .title {
             width: 100%;
             img {
-                top: 23.5%;
+                top: 13%;
                 right: 0%;
                 width: 16%;
             }
+
+            button {
+                margin-top: 80%;
+            }
+        }
+
+        div {
+            grid-template-columns: auto auto;
         }
     }
 }
@@ -164,7 +233,7 @@
         .title {
             width: 100%;
             img {
-                top: 22%;
+                top: 12%;
                 right: 0%;
                 width: 16%;
             }
@@ -177,7 +246,7 @@
         .title {
             width: 100%;
             img {
-                top: 22%;
+                top: 11.5%;
                 right: 0%;
                 width: 12%;
             }
