@@ -45,11 +45,12 @@
 }
 
 app-imprint {
-    height: 76vh;
+    height: 65vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 10%;
 }
 
 
@@ -89,10 +90,8 @@ app-imprint {
     }
 
     app-imprint {
-        height: 73vh;
-        h1 {
-            padding-top: 20%
-        }
+        height: 53vh;
+        padding-top: 20%;
     }
 }
 
