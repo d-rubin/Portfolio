@@ -140,6 +140,22 @@ span {
     }
 }
 
+@media (max-width: 1200px) {
+    .introduction {
+        img {
+            width: 45%;
+        }
+    }
+}
+
+// @media (max-width: 900px) {
+//     .introduction {
+//         img {
+//             width: 45%;
+//         }
+//     }
+// }
+
 @media (max-width: 900px) {
     .introduction {
         flex-direction: column;
@@ -252,15 +268,15 @@ span {
 @media (max-width: 400px) {
     .introduction {
         img {
-            margin-top: 23%;
+            margin-top: 27%;
         }
     }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 380px) {
     .introduction {
         img {
-            margin-top: 50%;
+            margin-top: 23%;
         }
     }
 }
